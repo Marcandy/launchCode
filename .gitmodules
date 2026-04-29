@@ -1,3 +1,4 @@
 [submodule "software-dev-course-programEnvironment-to-do-list"]
 	path = software-dev-course-programEnvironment-to-do-list
 	url = https://github.com/Marcandy/software-dev-course-programEnvironment-to-do-list.git
+	branch = main
