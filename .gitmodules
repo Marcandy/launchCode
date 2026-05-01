@@ -2,3 +2,6 @@
 	path = software-dev-course-programEnvironment-to-do-list
 	url = https://github.com/Marcandy/software-dev-course-programEnvironment-to-do-list.git
 	branch = main
+[submodule "software-dev-course-variables-naming-conventions-and-top-to-bottom-code-evaluation"]
+	path = software-dev-course-variables-naming-conventions-and-top-to-bottom-code-evaluation
+	url = https://github.com/Marcandy/software-dev-course-variables-naming-conventions-and-top-to-bottom-code-evaluation.git
