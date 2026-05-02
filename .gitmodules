@@ -8,3 +8,6 @@
 [submodule "software-dev-course-explicit-and-implicit-conversion-in-javascript"]
 	path = software-dev-course-explicit-and-implicit-conversion-in-javascript
 	url = https://github.com/Marcandy/software-dev-course-explicit-and-implicit-conversion-in-javascript.git
+[submodule "practice-readline-sync-Marcandy-nj"]
+	path = practice-readline-sync-Marcandy-nj
+	url = https://github.com/Marcandy/practice-readline-sync-Marcandy-nj.git
