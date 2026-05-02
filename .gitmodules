@@ -14,3 +14,6 @@
 [submodule "practice-character-checker-marcandy-nj"]
 	path = practice-character-checker-marcandy-nj
 	url = https://github.com/Marcandy/practice-character-checker-marcandy-nj.git
+[submodule "software-dev-course-the-string-dot-length-property"]
+	path = software-dev-course-the-string-dot-length-property
+	url = https://github.com/Marcandy/software-dev-course-the-string-dot-length-property.git
