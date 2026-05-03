@@ -17,3 +17,6 @@
 [submodule "software-dev-course-the-string-dot-length-property"]
 	path = software-dev-course-the-string-dot-length-property
 	url = https://github.com/Marcandy/software-dev-course-the-string-dot-length-property.git
+[submodule "software-dev-course-common-string-methods"]
+	path = software-dev-course-common-string-methods
+	url = https://github.com/Marcandy/software-dev-course-common-string-methods.git
