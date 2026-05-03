@@ -23,3 +23,6 @@
 [submodule "software-dev-course-unicode"]
 	path = software-dev-course-unicode
 	url = https://github.com/Marcandy/software-dev-course-unicode.git
+[submodule "software-dev-course-boolean-expressions-and-conditional-statements"]
+	path = software-dev-course-boolean-expressions-and-conditional-statements
+	url = https://github.com/Marcandy/software-dev-course-boolean-expressions-and-conditional-statements.git
