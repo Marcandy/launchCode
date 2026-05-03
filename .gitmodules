@@ -20,3 +20,6 @@
 [submodule "software-dev-course-common-string-methods"]
 	path = software-dev-course-common-string-methods
 	url = https://github.com/Marcandy/software-dev-course-common-string-methods.git
+[submodule "software-dev-course-unicode"]
+	path = software-dev-course-unicode
+	url = https://github.com/Marcandy/software-dev-course-unicode.git
