@@ -29,3 +29,6 @@
 [submodule "software-dev-course-debug-common-errors"]
 	path = software-dev-course-debug-common-errors
 	url = https://github.com/Marcandy/software-dev-course-debug-common-errors.git
+[submodule "practice-creating-arrays-1-marcandy-nj"]
+	path = practice-creating-arrays-1-marcandy-nj
+	url = https://github.com/Marcandy/practice-creating-arrays-1-marcandy-nj.git
