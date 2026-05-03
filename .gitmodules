@@ -26,3 +26,6 @@
 [submodule "software-dev-course-boolean-expressions-and-conditional-statements"]
 	path = software-dev-course-boolean-expressions-and-conditional-statements
 	url = https://github.com/Marcandy/software-dev-course-boolean-expressions-and-conditional-statements.git
+[submodule "software-dev-course-debug-common-errors"]
+	path = software-dev-course-debug-common-errors
+	url = https://github.com/Marcandy/software-dev-course-debug-common-errors.git
