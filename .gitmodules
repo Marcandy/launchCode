@@ -47,3 +47,6 @@
 [submodule "practice-indices-bracket-notation-marcandy-nj"]
 	path = practice-indices-bracket-notation-marcandy-nj
 	url = https://github.com/Marcandy/practice-indices-bracket-notation-marcandy-nj.git
+[submodule "practice-array-iterator-methods-marcandy-nj"]
+	path = practice-array-iterator-methods-marcandy-nj
+	url = https://github.com/Marcandy/practice-array-iterator-methods-marcandy-nj
