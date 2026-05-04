@@ -41,3 +41,6 @@
 [submodule "practice-2d-arrays-marcandy-nj"]
 	path = practice-2d-arrays-marcandy-nj
 	url = https://github.com/Marcandy/practice-2d-arrays-marcandy-nj.git
+[submodule "practice-common-array-methods-marcandy-nj"]
+	path = practice-common-array-methods-marcandy-nj
+	url = https://github.com/Marcandy/practice-common-array-methods-marcandy-nj.git
