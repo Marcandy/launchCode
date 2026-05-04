@@ -53,3 +53,6 @@
 [submodule "practice-converting-character-arrays-marcandy-nj"]
 	path = practice-converting-character-arrays-marcandy-nj
 	url = https://github.com/Marcandy/practice-converting-character-arrays-marcandy-nj.git
+[submodule "practice-array-iterator-methods2-marcandy-nj"]
+	path = practice-array-iterator-methods2-marcandy-nj
+	url = https://github.com/Marcandy/practice-array-iterator-methods2-marcandy-nj
