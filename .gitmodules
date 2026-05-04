@@ -38,3 +38,6 @@
 [submodule "practice-mixed-type-arrays-marcandy-nj"]
 	path = practice-mixed-type-arrays-marcandy-nj
 	url = https://github.com/Marcandy/practice-mixed-type-arrays-marcandy-nj.git
+[submodule "practice-2d-arrays-marcandy-nj"]
+	path = practice-2d-arrays-marcandy-nj
+	url = https://github.com/Marcandy/practice-2d-arrays-marcandy-nj.git
