@@ -56,3 +56,6 @@
 [submodule "practice-array-iterator-methods2-marcandy-nj"]
 	path = practice-array-iterator-methods2-marcandy-nj
 	url = https://github.com/Marcandy/practice-array-iterator-methods2-marcandy-nj
+[submodule "final-practiceUnit0-marcandy-nj"]
+	path = final-practiceUnit0-marcandy-nj
+	url = https://github.com/Marcandy/final-practiceUnit0-marcandy-nj.git
