@@ -62,3 +62,6 @@
 [submodule "practice-password-validator-marcandy-nj"]
 	path = practice-password-validator-marcandy-nj
 	url = https://github.com/Marcandy/practice-password-validator-marcandy-nj.git
+[submodule "software-dev-course-git-branching"]
+	path = software-dev-course-git-branching
+	url = https://github.com/Marcandy/software-dev-course-git-branching.git
