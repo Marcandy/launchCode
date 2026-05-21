@@ -71,3 +71,6 @@
 [submodule "practice-building-recursive-function-marcandy-nj"]
 	path = practice-building-recursive-function-marcandy-nj
 	url = https://github.com/Marcandy/practice-building-recursive-function-marcandy-nj.git
+[submodule "practice-createACalculator-marcandy-nj"]
+	path = practice-createACalculator-marcandy-nj
+	url = https://github.com/Marcandy/practice-createACalculator-marcandy-nj.git
