@@ -74,3 +74,6 @@
 [submodule "practice-createACalculator-marcandy-nj"]
 	path = practice-createACalculator-marcandy-nj
 	url = https://github.com/Marcandy/practice-createACalculator-marcandy-nj.git
+[submodule "software-dev-course-anonymous-functions"]
+	path = software-dev-course-anonymous-functions
+	url = https://github.com/Marcandy/software-dev-course-anonymous-functions.git
