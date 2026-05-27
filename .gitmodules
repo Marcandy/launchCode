@@ -77,3 +77,6 @@
 [submodule "software-dev-course-anonymous-functions"]
 	path = software-dev-course-anonymous-functions
 	url = https://github.com/Marcandy/software-dev-course-anonymous-functions.git
+[submodule "software-dev-course-higher-order-functions"]
+	path = software-dev-course-higher-order-functions
+	url = https://github.com/Marcandy/software-dev-course-higher-order-functions.git
