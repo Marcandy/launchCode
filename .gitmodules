@@ -83,3 +83,6 @@
 [submodule "software-dev-course-the-finally-block"]
 	path = software-dev-course-the-finally-block
 	url = https://github.com/Marcandy/software-dev-course-the-finally-block.git
+[submodule "software-dev-course-exception-handling"]
+	path = software-dev-course-exception-handling
+	url = https://github.com/Marcandy/software-dev-course-exception-handling.git
