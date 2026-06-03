@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="3400" viewBox="0 0 900 3400" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 12; }
+      .panel-header { fill: #1e40af; rx: 12; }
+      .panel-title { font-size: 20px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
+      .h1 { font-size: 40px; font-weight: 800; fill: #0f172a; }
+      .h-sub { font-size: 17px; fill: #475569; font-style: italic; }
+      .body { font-size: 16px; fill: #1e293b; }
+      .small { font-size: 13px; fill: #64748b; }
+      .strong { font-size: 16px; fill: #1e293b; font-weight: 700; }
+      .label { font-size: 13px; font-weight: 700; fill: #475569; letter-spacing: 0.5px; }
+      .code { font-family: 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace; font-size: 14px; fill: #0f172a; }
+      .code-kw { fill: #7e22ce; font-weight: 700; }
+      .code-str { fill: #16a34a; }
+      .code-cmt { fill: #64748b; font-style: italic; }
+      .code-fn { fill: #1d4ed8; }
+      .code-bg { fill: #f1f5f9; stroke: #e2e8f0; stroke-width: 1; rx: 8; }
+      .insight-bg { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1.5; rx: 8; }
+      .insight { font-size: 15px; fill: #78350f; font-weight: 700; }
+      .warn-bg { fill: #fee2e2; stroke: #ef4444; stroke-width: 1.5; rx: 8; }
+      .warn { font-size: 14px; fill: #7f1d1d; font-weight: 600; }
+      .ok-bg { fill: #d1fae5; stroke: #10b981; stroke-width: 1.5; rx: 8; }
+      .ok { font-size: 14px; fill: #064e3b; font-weight: 600; }
+      .box { fill: #ffffff; stroke: #1e40af; stroke-width: 2; rx: 6; }
+      .box-shared { fill: #ede9fe; stroke: #7c3aed; stroke-width: 2; rx: 6; }
+      .box-instance { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2; rx: 6; }
+      .arrow { stroke: #475569; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .arrow-bold { stroke: #b91c1c; stroke-width: 2.5; fill: none; marker-end: url(#arrow-red); }
+      .divider { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 4 4; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="900" height="3400"/>
+
+  <!-- ============ HEADER ============ -->
+  <g transform="translate(40, 40)">
+    <text class="h1" x="0" y="40">JavaScript Classes</text>
+    <text class="h1" x="0" y="85" fill="#1e40af">Pocket Reference</text>
+    <text class="h-sub" x="0" y="115">For walks &amp; queues — glance, recall, repeat</text>
+    <line x1="0" y1="135" x2="820" y2="135" stroke="#1e40af" stroke-width="3"/>
+  </g>
+
+  <!-- ============ PANEL 1: ANATOMY ============ -->
+  <g transform="translate(40, 220)">
+    <rect class="panel" width="820" height="360"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">1 · ANATOMY OF A CLASS</text>
+
+    <text class="body" x="20" y="80">A class is a blueprint. It has two halves:</text>
+    <text class="strong" x="20" y="108">• constructor</text>
+    <text class="body" x="40" y="128">runs once per `new`. Sets up per-instance data.</text>
+    <text class="strong" x="20" y="156">• methods</text>
+    <text class="body" x="40" y="176">shared behavior. Live on the prototype, not the instance.</text>
+
+    <!-- Code block -->
+    <rect class="code-bg" x="20" y="200" width="780" height="120"/>
+    <text class="code" x="35" y="225"><tspan class="code-kw">class</tspan> Vehicle {</text>
+    <text class="code" x="35" y="245">  <tspan class="code-fn">constructor</tspan>(make, mileage = <tspan class="code-str">0</tspan>) {</text>
+    <text class="code" x="35" y="265">    <tspan class="code-kw">this</tspan>.make = make;       <tspan class="code-cmt">// data → instance</tspan></text>
+    <text class="code" x="35" y="285">    <tspan class="code-kw">this</tspan>.mileage = mileage;</text>
+    <text class="code" x="35" y="305">  }</text>
+    <text class="code" x="35" y="325" font-size="13"></text>
+    <rect class="insight-bg" x="20" y="330" width="780" height="22"/>
+    <text class="insight" x="35" y="346">→ Constructor sets DATA. Methods define BEHAVIOR.</text>
+  </g>
+
+  <!-- ============ PANEL 2: WHERE DATA & METHODS LIVE ============ -->
+  <g transform="translate(40, 610)">
+    <rect class="panel" width="820" height="430"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">2 · WHERE DATA &amp; METHODS LIVE</text>
+
+    <text class="body" x="20" y="80">Three vehicles, one shared `drive()`. Different data — same function.</text>
+
+    <!-- Diagram: 3 instances pointing to shared prototype -->
+    <g transform="translate(20, 100)">
+      <!-- Instance boxes -->
+      <rect class="box-instance" x="0" y="0" width="180" height="80"/>
+      <text class="label" x="10" y="20">car (instance)</text>
+      <text class="code" x="10" y="40">make: 'Honda'</text>
+      <text class="code" x="10" y="58">mileage: 38000</text>
+
+      <rect class="box-instance" x="200" y="0" width="180" height="80"/>
+      <text class="label" x="210" y="20">truck (instance)</text>
+      <text class="code" x="210" y="40">make: 'Ford'</text>
+      <text class="code" x="210" y="58">mileage: 1200</text>
+
+      <rect class="box-instance" x="400" y="0" width="180" height="80"/>
+      <text class="label" x="410" y="20">moto (instance)</text>
+      <text class="code" x="410" y="40">make: 'Honda'</text>
+      <text class="code" x="410" y="58">mileage: 80</text>
+
+      <!-- Arrows pointing down to prototype -->
+      <path class="arrow" d="M 90 80 L 90 130 L 380 130 L 380 150"/>
+      <path class="arrow" d="M 290 80 L 290 130"/>
+      <path class="arrow" d="M 490 80 L 490 130 L 380 130"/>
+
+      <!-- Shared prototype box -->
+      <rect class="box-shared" x="180" y="150" width="400" height="80"/>
+      <text class="label" x="190" y="170">Vehicle.prototype  (shared by all)</text>
+      <text class="code" x="190" y="192">drive(distance) { ... }</text>
+      <text class="code" x="190" y="212">getDetails() { ... }</text>
+
+      <text class="small" x="600" y="200">↑ ONE copy of each method,</text>
+      <text class="small" x="600" y="216">in memory, ever.</text>
+    </g>
+
+    <rect class="insight-bg" x="20" y="385" width="780" height="30"/>
+    <text class="insight" x="35" y="405">→ DATA differs per object (instance). BEHAVIOR is shared (prototype).</text>
+  </g>
+
+  <!-- ============ PANEL 3: `this` ============ -->
+  <g transform="translate(40, 1070)">
+    <rect class="panel" width="820" height="290"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">3 · THE `this` KEYWORD</text>
+
+    <text class="body" x="20" y="80">Inside a method, `this` = whichever object you called the method on.</text>
+
+    <rect class="code-bg" x="20" y="100" width="780" height="120"/>
+    <text class="code" x="35" y="125">car.<tspan class="code-fn">drive</tspan>(<tspan class="code-str">500</tspan>);     <tspan class="code-cmt">// inside drive: this === car</tspan></text>
+    <text class="code" x="35" y="148">truck.<tspan class="code-fn">drive</tspan>(<tspan class="code-str">1200</tspan>);  <tspan class="code-cmt">// inside drive: this === truck</tspan></text>
+    <text class="code" x="35" y="180"><tspan class="code-fn">drive</tspan>(distance) {</text>
+    <text class="code" x="35" y="200">  <tspan class="code-kw">this</tspan>.mileage += distance;   <tspan class="code-cmt">// updates whoever called</tspan></text>
+    <text class="code" x="35" y="215">}</text>
+
+    <rect class="insight-bg" x="20" y="232" width="780" height="44"/>
+    <text class="insight" x="35" y="252">→ One shared function, but `this` makes it operate on the right object.</text>
+    <text class="insight" x="35" y="270">→ Methods take NO "self" argument — `this` is automatic.</text>
+  </g>
+
+  <!-- ============ PANEL 4: INHERITANCE + super ============ -->
+  <g transform="translate(40, 1390)">
+    <rect class="panel" width="820" height="470"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">4 · INHERITANCE — `extends` + `super()`</text>
+
+    <text class="body" x="20" y="80">`Book` is-a `LibraryItem` with extras. The child REUSES the parent.</text>
+
+    <rect class="code-bg" x="20" y="100" width="780" height="180"/>
+    <text class="code" x="35" y="125"><tspan class="code-kw">class</tspan> LibraryItem {</text>
+    <text class="code" x="35" y="145">  <tspan class="code-fn">constructor</tspan>(title, id, isAvailable = <tspan class="code-kw">true</tspan>) {</text>
+    <text class="code" x="35" y="165">    <tspan class="code-kw">this</tspan>.title = title; <tspan class="code-kw">this</tspan>.id = id;</text>
+    <text class="code" x="35" y="185">    <tspan class="code-kw">this</tspan>.isAvailable = isAvailable;</text>
+    <text class="code" x="35" y="205">  }</text>
+    <text class="code" x="35" y="225">}</text>
+    <text class="code" x="35" y="245"><tspan class="code-kw">class</tspan> Book <tspan class="code-kw">extends</tspan> LibraryItem {</text>
+    <text class="code" x="35" y="265">  <tspan class="code-fn">constructor</tspan>(title, id, author) {</text>
+    <text class="code" x="35" y="287">    <tspan class="code-kw">super</tspan>(title, id);  <tspan class="code-cmt">// ← pours the foundation</tspan></text>
+    <text class="code" x="35" y="307">    <tspan class="code-kw">this</tspan>.author = author;  <tspan class="code-cmt">// ← then walls</tspan></text>
+    <text class="code" x="35" y="325">  }</text>
+    <text class="code" x="35" y="345">}</text>
+
+    <rect class="warn-bg" x="20" y="380" width="380" height="68"/>
+    <text class="warn" x="35" y="400">WRONG ORDER:</text>
+    <text class="code" x="35" y="420">  <tspan class="code-kw">this</tspan>.author = author;</text>
+    <text class="code" x="35" y="438">  <tspan class="code-kw">super</tspan>(title, id);   <tspan style="fill:#b91c1c">✗ ReferenceError</tspan></text>
+
+    <rect class="ok-bg" x="420" y="380" width="380" height="68"/>
+    <text class="ok" x="435" y="400">RIGHT ORDER:</text>
+    <text class="code" x="435" y="420">  <tspan class="code-kw">super</tspan>(title, id);</text>
+    <text class="code" x="435" y="438">  <tspan class="code-kw">this</tspan>.author = author;   ✓</text>
+  </g>
+
+  <!-- ============ PANEL 5: super() VARIATIONS ============ -->
+  <g transform="translate(40, 1890)">
+    <rect class="panel" width="820" height="370"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">5 · `super()` — WHAT YOU PASS MATTERS</text>
+
+    <text class="body" x="20" y="80">`super(...)` is just a function call to the parent's constructor.</text>
+
+    <!-- Table-like layout -->
+    <g transform="translate(20, 100)">
+      <rect fill="#f1f5f9" x="0" y="0" width="780" height="32" rx="6"/>
+      <text class="label" x="15" y="20">CALL</text>
+      <text class="label" x="320" y="20">WHAT THE PARENT GETS</text>
+
+      <text class="code" x="15" y="58">super(title, id, false)</text>
+      <text class="body" x="320" y="58">all values passed explicitly</text>
+      <line x1="0" y1="72" x2="780" y2="72" class="divider"/>
+
+      <text class="code" x="15" y="92">super(title, id)</text>
+      <text class="body" x="320" y="92">isAvailable uses its default (`true`)</text>
+      <line x1="0" y1="106" x2="780" y2="106" class="divider"/>
+
+      <text class="code" x="15" y="126">super()</text>
+      <text class="body" x="320" y="126">all params → undefined / defaults</text>
+      <line x1="0" y1="140" x2="780" y2="140" class="divider"/>
+
+      <text class="code" x="15" y="160" fill="#b91c1c">(no super at all)</text>
+      <text class="body" x="320" y="160" fill="#b91c1c">✗ ReferenceError — `this` blocked</text>
+    </g>
+
+    <rect class="insight-bg" x="20" y="285" width="780" height="68"/>
+    <text class="insight" x="35" y="305">→ Empty `super()` is LEGAL — parent runs with undefined inputs.</text>
+    <text class="insight" x="35" y="325">→ MISSING `super` is ILLEGAL — child can't touch `this` yet.</text>
+    <text class="insight" x="35" y="345">→ Foundation first. Always.</text>
+  </g>
+
+  <!-- ============ PANEL 6: WHERE DOES STATE LIVE? ============ -->
+  <g transform="translate(40, 2290)">
+    <rect class="panel" width="820" height="340"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">6 · WHERE DOES STATE LIVE?</text>
+
+    <text class="body" x="20" y="80">Put state at the LOWEST level where it's still shared by everything beneath.</text>
+
+    <g transform="translate(20, 100)">
+      <rect fill="#f1f5f9" x="0" y="0" width="780" height="32" rx="6"/>
+      <text class="label" x="15" y="20">QUESTION</text>
+      <text class="label" x="420" y="20">PUT IT WHERE</text>
+
+      <text class="body" x="15" y="58">All children need it, same default?</text>
+      <text class="strong" x="420" y="58" fill="#1e40af">Parent (with default param)</text>
+      <line x1="0" y1="72" x2="780" y2="72" class="divider"/>
+
+      <text class="body" x="15" y="92">All children need it, different defaults?</text>
+      <text class="strong" x="420" y="92" fill="#1e40af">Parent — pass via `super(...)`</text>
+      <line x1="0" y1="106" x2="780" y2="106" class="divider"/>
+
+      <text class="body" x="15" y="126">Only some children need it?</text>
+      <text class="strong" x="420" y="126" fill="#1e40af">Child class</text>
+      <line x1="0" y1="140" x2="780" y2="140" class="divider"/>
+
+      <text class="body" x="15" y="160">Varies per individual instance?</text>
+      <text class="strong" x="420" y="160" fill="#1e40af">Instance property / closure</text>
+    </g>
+
+    <rect class="insight-bg" x="20" y="290" width="780" height="32"/>
+    <text class="insight" x="35" y="311">→ `isAvailable` belongs on the parent. `loanPeriodDays` (varies by type) belongs on the child.</text>
+  </g>
+
+  <!-- ============ PANEL 7: COMPOSITION — THE ALTERNATIVE ============ -->
+  <g transform="translate(40, 2660)">
+    <rect class="panel" width="820" height="370"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">7 · COMPOSITION — DON'T ALWAYS EXTEND</text>
+
+    <text class="body" x="20" y="80">"Prefer composition over inheritance." When `extends` feels heavy, skip it.</text>
+
+    <rect class="code-bg" x="20" y="100" width="780" height="180"/>
+    <text class="code" x="35" y="125"><tspan class="code-cmt">// Factory function — no class, no super</tspan></text>
+    <text class="code" x="35" y="148"><tspan class="code-kw">function</tspan> <tspan class="code-fn">makeBook</tspan>(title, id, author) {</text>
+    <text class="code" x="35" y="168">  <tspan class="code-kw">return</tspan> {</text>
+    <text class="code" x="35" y="188">    title, id, author, isAvailable: <tspan class="code-kw">true</tspan>,</text>
+    <text class="code" x="35" y="208">    <tspan class="code-fn">checkout</tspan>()   { <tspan class="code-kw">this</tspan>.isAvailable = <tspan class="code-kw">false</tspan>; },</text>
+    <text class="code" x="35" y="228">    <tspan class="code-fn">returnItem</tspan>() { <tspan class="code-kw">this</tspan>.isAvailable = <tspan class="code-kw">true</tspan>;  }</text>
+    <text class="code" x="35" y="248">  };</text>
+    <text class="code" x="35" y="268">}</text>
+
+    <rect class="insight-bg" x="20" y="295" width="780" height="60"/>
+    <text class="insight" x="35" y="315">→ Inheritance = "is-a" (Book IS-A LibraryItem)</text>
+    <text class="insight" x="35" y="335">→ Composition = "has-a" / loose mixing. Easier to refactor, less ceremony.</text>
+    <text class="insight" x="35" y="353">    Use inheritance when types REALLY share an interface; otherwise compose.</text>
+  </g>
+
+  <!-- ============ PANEL 8: QUICK GOTCHAS ============ -->
+  <g transform="translate(40, 3060)">
+    <rect class="panel" width="820" height="300"/>
+    <rect class="panel-header" width="820" height="44"/>
+    <text class="panel-title" x="20" y="30">8 · QUICK GOTCHAS &amp; MENTAL MODELS</text>
+
+    <text class="strong" x="20" y="82">• `this` = the object on the left of the dot.</text>
+    <text class="small" x="40" y="100">car.drive()  →  this === car   |   no caller? this === undefined (strict mode).</text>
+
+    <text class="strong" x="20" y="130">• Methods belong to the CLASS. Properties belong to the INSTANCE.</text>
+    <text class="small" x="40" y="148">Writing this.drive = function(){} in the constructor copies it per instance — usually wrong.</text>
+
+    <text class="strong" x="20" y="178">• `super(...)` is just a function call to the parent constructor.</text>
+    <text class="small" x="40" y="196">Must run before any `this.x = ...` in a derived constructor. Foundation → walls.</text>
+
+    <text class="strong" x="20" y="226">• Closures = a function carrying a "backpack" of variables from where it was made.</text>
+    <text class="small" x="40" y="244">Used for per-instance behavior or private state. Each call to the factory = new backpack.</text>
+
+    <text class="strong" x="20" y="274">• Class fields (ES2022): `isAvailable = true;` outside the constructor works too.</text>
+    <text class="small" x="40" y="292">Cleaner default declarations. Doesn't change inheritance rules — `super()` still required.</text>
+  </g>
+
+</svg>

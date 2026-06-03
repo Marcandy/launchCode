@@ -86,3 +86,12 @@
 [submodule "software-dev-course-exception-handling"]
 	path = software-dev-course-exception-handling
 	url = https://github.com/Marcandy/software-dev-course-exception-handling.git
+[submodule "practice-fleet-management-marcandy-nj"]
+	path = practice-fleet-management-marcandy-nj
+	url = https://github.com/Marcandy/practice-fleet-management-marcandy-nj.git
+[submodule "practice-library-management-marcandy-nj"]
+	path = practice-library-management-marcandy-nj
+	url = https://github.com/Marcandy/practice-library-management-marcandy-nj.git
+[submodule "practice-string-utilities-marcandy-nj"]
+	path = practice-string-utilities-marcandy-nj
+	url = https://github.com/Marcandy/practice-string-utilities-marcandy-nj.git
