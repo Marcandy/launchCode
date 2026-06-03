@@ -95,3 +95,9 @@
 [submodule "practice-string-utilities-marcandy-nj"]
 	path = practice-string-utilities-marcandy-nj
 	url = https://github.com/Marcandy/practice-string-utilities-marcandy-nj.git
+[submodule "practice-importing-modules-marcandy-nj"]
+	path = practice-importing-modules-marcandy-nj
+	url = https://github.com/Marcandy/practice-importing-modules-marcandy-nj.git
+[submodule "practice-using-modules-marcandy-nj"]
+	path = practice-using-modules-marcandy-nj
+	url = https://github.com/Marcandy/practice-using-modules-marcandy-nj.git
