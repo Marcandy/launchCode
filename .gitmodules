@@ -101,3 +101,9 @@
 [submodule "practice-using-modules-marcandy-nj"]
 	path = practice-using-modules-marcandy-nj
 	url = https://github.com/Marcandy/practice-using-modules-marcandy-nj.git
+[submodule "text-adventure-game"]
+	path = text-adventure-game
+	url = https://github.com/Marcandy/text-adventure-game.git
+[submodule "software-dev-course-git-collab-marcandy-nj"]
+	path = software-dev-course-git-collab-marcandy-nj
+	url = https://github.com/Marcandy/software-dev-course-git-collab-marcandy-nj.git
