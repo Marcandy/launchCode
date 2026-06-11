@@ -107,3 +107,12 @@
 [submodule "software-dev-course-git-collab-marcandy-nj"]
 	path = software-dev-course-git-collab-marcandy-nj
 	url = https://github.com/Marcandy/software-dev-course-git-collab-marcandy-nj.git
+[submodule "practice-writing-unitTests-marcandy-nj"]
+	path = practice-writing-unitTests-marcandy-nj
+	url = https://github.com/Marcandy/practice-writing-unitTests-marcandy-nj.git
+[submodule "software-dev-course-unit-testing"]
+	path = software-dev-course-unit-testing
+	url = https://github.com/Marcandy/software-dev-course-unit-testing.git
+[submodule "practice-portfolio-page-marcandy-nj"]
+	path = practice-portfolio-page-marcandy-nj
+	url = https://github.com/Marcandy/practice-portfolio-page-marcandy-nj.git
