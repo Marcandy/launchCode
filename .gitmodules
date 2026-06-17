@@ -128,3 +128,6 @@
 [submodule "practice-quizApp-marcandy-nj"]
 	path = practice-quizApp-marcandy-nj
 	url = https://github.com/Marcandy/practice-quizApp-marcandy-nj.git
+[submodule "practice-jSON-travel-itinerary-marcandy"]
+	path = practice-jSON-travel-itinerary-marcandy
+	url = https://github.com/Marcandy/practice-jSON-travel-itinerary-marcandy.git
