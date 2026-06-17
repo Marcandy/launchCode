@@ -116,3 +116,15 @@
 [submodule "practice-portfolio-page-marcandy-nj"]
 	path = practice-portfolio-page-marcandy-nj
 	url = https://github.com/Marcandy/practice-portfolio-page-marcandy-nj.git
+[submodule "practice-buildingAForm-marcandy-nj"]
+	path = practice-buildingAForm-marcandy-nj
+	url = https://github.com/Marcandy/practice-buildingAForm-marcandy-nj.git
+[submodule "LC-DOM-Basics"]
+	path = LC-DOM-Basics
+	url = https://github.com/Marcandy/LC-DOM-Basics.git
+[submodule "practice-interactiveShopping-marcandy-nj"]
+	path = practice-interactiveShopping-marcandy-nj
+	url = https://github.com/Marcandy/practice-interactiveShopping-marcandy-nj
+[submodule "practice-quizApp-marcandy-nj"]
+	path = practice-quizApp-marcandy-nj
+	url = https://github.com/Marcandy/practice-quizApp-marcandy-nj.git

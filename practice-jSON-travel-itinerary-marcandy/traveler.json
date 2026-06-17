@@ -1,0 +1,31 @@
+{
+    "tripName": "El Dorados",
+    "traveler":  {
+        "name": "marcandy",
+        "contact": {
+            "email": "marcandy.nj@gmail.com",
+            "phone": "898-444-4444",
+            "fax": "000-888-6666"
+        }
+    },
+    "destinations": [
+        {
+            "location": "The Bahamas",
+            "arrivalDate": "2026-07-01",
+            "departureDate": "2026-07-05",
+            "activities": [
+                { "title": "Snorkeling at the reef", "time": "10:00 AM" },
+                { "title": "Beach dinner", "time": "7:00 PM" }
+            ]
+        },
+        {
+            "location": "Paris",
+            "arrivalDate": "2026-07-06",
+            "departureDate": "2026-07-10",
+            "activities": [
+                { "title": "Louvre Museum tour", "time": "9:30 AM" },
+                { "title": "Eiffel Tower visit", "time": "2:00 PM" }
+            ]
+        }
+    ]
+}
