@@ -134,3 +134,9 @@
 [submodule "json-api-explorer"]
 	path = json-api-explorer
 	url = https://github.com/Marcandy/json-api-explorer.git
+[submodule "practice-toDoList-marcandy-nj"]
+	path = practice-toDoList-marcandy-nj
+	url = https://github.com/Marcandy/practice-toDoList-marcandy-nj.git
+[submodule "practice-dynamicDashboard-marcandy-nj"]
+	path = practice-dynamicDashboard-marcandy-nj
+	url = https://github.com/YOUR-USERNAME/practice-dynamicDashboard-marcandy-nj.git
