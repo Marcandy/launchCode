@@ -8,11 +8,9 @@ import Hello from './components/Hello';
 import TestFunctional from './testFunctional'
 
 function App() {
-  
-
   return (
     <div>
-      <TestFunctional />
+      <TestFunctional/>
       <Hello/>
     </div>
   )

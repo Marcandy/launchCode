@@ -140,3 +140,6 @@
 [submodule "practice-dynamicDashboard-marcandy-nj"]
 	path = practice-dynamicDashboard-marcandy-nj
 	url = https://github.com/YOUR-USERNAME/practice-dynamicDashboard-marcandy-nj.git
+[submodule "static-todo-react-app"]
+	path = static-todo-react-app
+	url = https://github.com/Marcandy/static-todo-react-app-marcandy-nj
