@@ -143,3 +143,12 @@
 [submodule "static-todo-react-app"]
 	path = static-todo-react-app
 	url = https://github.com/Marcandy/static-todo-react-app-marcandy-nj
+[submodule "software-dev-course-debug-tools-and-programs"]
+	path = software-dev-course-debug-tools-and-programs
+	url = https://github.com/Marcandy/software-dev-course-debug-tools-and-programs.git
+[submodule "software-dev-course-react-state-practice-1"]
+	path = software-dev-course-react-state-practice-1
+	url = https://github.com/Marcandy/software-dev-course-react-state-practice-1.git
+[submodule "practice-portfolio-page-react-marcandynj"]
+	path = practice-portfolio-page-react-marcandynj
+	url = ./practice-portfolio-page-react-marcandynj/
