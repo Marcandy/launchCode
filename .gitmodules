@@ -152,3 +152,9 @@
 [submodule "practice-portfolio-page-react-marcandynj"]
 	path = practice-portfolio-page-react-marcandynj
 	url = ./practice-portfolio-page-react-marcandynj/
+[submodule "practice-reactWeatherApp-puja-j"]
+	path = practice-reactWeatherApp-puja-j
+	url = https://github.com/Marcandy/practice-reactWeatherApp-puja-j.git
+[submodule "practice-taskManagement-MunnishaV"]
+	path = practice-taskManagement-MunnishaV
+	url = https://github.com/Marcandy/practice-taskManagement-MunnishaV.git
